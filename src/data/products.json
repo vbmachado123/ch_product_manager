@@ -1,0 +1,38 @@
+[
+  {
+    "id": "3f41da02-4cad-4853-9270-260399e649f7",
+    "title": "Produto 1",
+    "description": "Teste descricao",
+    "price": 29.99,
+    "thumbnail": "xpto.png",
+    "code": "#ABSKD",
+    "stock": 100
+  },
+  {
+    "id": "8cafa908-780c-4ed0-aa65-07f3a4813f22",
+    "title": "Produto 1",
+    "description": "Teste descricao",
+    "price": 29.99,
+    "thumbnail": "xpto.png",
+    "code": "#ABSKD",
+    "stock": 100
+  },
+  {
+    "id": "aee13290-5aeb-4fca-bd27-df0db974a471",
+    "title": "Produto 1",
+    "description": "Teste descricao",
+    "price": 29.99,
+    "thumbnail": "xpto.png",
+    "code": "#ABSKD",
+    "stock": 100
+  },
+  {
+    "id": "194311dd-283d-46fc-b398-03e7236bd0eb",
+    "title": "Produto 1",
+    "description": "Teste descricao",
+    "price": 29.99,
+    "thumbnail": "xpto.png",
+    "code": "#ABSKD",
+    "stock": 100
+  }
+]
