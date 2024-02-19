@@ -2,13 +2,12 @@ const fs = require("fs").promises;
 const { v4: uuidv4 } = require('uuid');
 
 class ProductManager {
-    constructor(path) {
-        this.path = path;
-    }
+    #pathData = `${__dirname}/data/products.json`;
+    constructor() {}
 
     async readProductsFile() {
         try {
-            const data = await fs.readFile(this.path, 'utf-8');
+            const data = await fs.readFile(this.#pathData, 'utf-8');
             return JSON.parse(data);
         } catch (ex) {
             console.error(ex.message);
@@ -19,7 +18,7 @@ class ProductManager {
     async writeProductsFile(data) {
         const products = JSON.stringify(data, null, 2);
 
-        await fs.writeFile(this.path, products, 'utf-8');
+        await fs.writeFile(this.#pathData, products, 'utf-8');
     }
 
     async addProduct(product) {
@@ -98,6 +97,6 @@ class ProductManager {
     }
 }
 
-const productManager = new ProductManager("./src/data/products.json");
+const productManager = new ProductManager();
 
 module.exports = productManager;
